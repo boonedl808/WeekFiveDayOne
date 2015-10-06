@@ -1,0 +1,11 @@
+<div class="container">
+    <input class="btn btn-lrg btn-group-justified" type="submit" ng-click="switchView('/')" value="home">
+</div>
+<div class="container center-block">
+    <form class="form-horizontal" ng-submit="createPost('/')">
+        <input type="text" ng-model="blogPost.title" class="form-control margin-top" id="title" placeholder="title..."/>
+        <input type="text" ng-model="blogPost.author" class="form-control margin-top" id="author" placeholder="author..."/>
+        <textarea type="text" ng-model="blogPost.content" class="form-control margin-top" rows="7" id="content" placeholder="talk about it..."></textarea>
+        <input type="submit" class="btn btn-primary margin-top" value="post!"/>
+    </form>
+</div>
